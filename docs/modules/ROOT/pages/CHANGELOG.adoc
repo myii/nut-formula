@@ -1,0 +1,40 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/nut-formula/compare/v1.0.0...v1.1.0++[1.1.0^] (2020-09-20)
+
+=== Continuous Integration
+
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/nut-formula/commit/4e93dbdf293be52c0320fe4eb5d9d35acf4f0433[4e93dbd^])
+
+=== Features
+
+* *services:* don't manage them in mode=none
+(https://github.com/saltstack-formulas/nut-formula/commit/e094946e42c05f9f750289d9a2ea487b156e0fe5[e094946^])
+
+=== Styles
+
+* *libtofs.jinja:* use Black-inspired Jinja formatting [skip ci]
+(https://github.com/saltstack-formulas/nut-formula/commit/15d48103fc8ba515f9cf49a042acbf9b08aeb89b[15d4810^])
+
+== link:++https://github.com/saltstack-formulas/nut-formula/compare/v0.2.0...v1.0.0++[1.0.0^] (2020-06-01)
+
+=== Bug Fixes
+
+* *amazon:* remove improvable distro for UPS management
+(https://github.com/saltstack-formulas/nut-formula/commit/424467befc3332770313200375b7c7ebb91867bb[424467b^])
+
+=== Code Refactoring
+
+* *states+config:* to conform to “template-formula” standard
+(https://github.com/saltstack-formulas/nut-formula/commit/ae33686a90ce44c9f35a06a670a3370cfbf02680[ae33686^])
+
+=== BREAKING CHANGES
+
+* *states+config:* the templates are now under "nut/files/default".
+* *states+config:* "pkg" and "extra_pkgs" are now merged under a "pkgs"
+list.
+* *states+config:* config file names are now under
+`<server|client>.<component>.config.file`
